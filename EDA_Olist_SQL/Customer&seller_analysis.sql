@@ -1,4 +1,4 @@
-/* With the customer and seller tables we want to find the answer to the following questions:
+/* With the customer and seller tables we want to find the answer to the following questions:-
 1. What are the top 10 cities with most customers?
 2. What are the top 10 states with most customers?
 3. Find what top 10 cities come under what states?
