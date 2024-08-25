@@ -815,33 +815,58 @@ Observation
 On avergare R$19.9 frieght charges are there per order.
 
 
-## **Executive summary**
+# E-Commerce Database Analytics: PostgreSQL-Driven Insights
 
-### **Database design and importing data**
+## Executive Summary
 
-This part of the project includes using the schema provide by the Olist dataset to establish the follwing tasks:
-- Using the data in different csv files to import into seperate tables using the given schema.
-- Creating tables in order so that these relationships can be established and data can be imported in a logical order.
-- Asigning adequate data types such as int, numeeric, varchar, timestamp etc to the tables so that it is easies to perform functions usch as joins to the tables.
-- Creating a Entity relationship diagram and then comparing it to the schema provided.
+This project analyzes the Olist E-commerce dataset, focusing on database design, data import, and exploratory data analysis to derive insights into customer behavior, product performance, and business trends.
 
-After this part the data is avalabl ein a form that can be used for exploratory data analysis.
+### Database Design and Data Import
 
-### **Exploaratory Data Analysis**
+- Created nine distinct tables based on the Olist schema, including customers, sellers, orders, products, and reviews.
+- Established relationships through primary and foreign keys to ensure data integrity.
+- Assigned appropriate data types (e.g., varchar, int, numeric, timestamp) to optimize storage and query performance.
+- Imported data in a specific order to maintain relational integrity.
+- Created an Entity Relationship Diagram (ERD) to visualize table relationships.
 
-This part of the project includes exploring the data using postgres and then visualizing it in tableau.
+Key technical aspects:
+- Used PostgreSQL as the database management system.
+- Created indexes on foreign keys to enhance join operations and query performance.
+- Accommodated over 100,000 orders spanning from 2016 to 2018.
 
-- Gaining insights using questions for each segment of this analysis.
-- Finding the different geographical distribution of customers and sellers.
-- Analysing sales and revenue as well as product distribution.
-- Understanding the delivery timings and its effect on reviews
+### Exploratory Data Analysis
 
-Various SQl techniques are used in order to perform these analysis such as:
+Analysis divided into three main segments:
 
-- Joins are used for  different tables to get required results.
-- CTE common tabke expression is used for table manuplation.
-- Aggregate functions used such as avg, max, min for analysis.
-- Subqueries and Group By clauses used with other basic operations like to extract order and filter data.
+1. **Customer and Seller Analysis:**
+   - Identified top cities and states for both customers and sellers.
+   - São Paulo emerged as the leading city and state for both customers and sellers.
+
+2. **Delivery and Review Analysis:**
+   - Average order approval time: 10 hours and 16 minutes.
+   - Average delivery time: 12 days, 13 hours.
+   - Found strong correlation between delivery time and review scores:
+     - Orders delivered within 2 weeks: Average rating 4.35
+     - Orders delivered after 5 weeks: Average rating 1.97
+
+3. **Sales and Revenue Analysis:**
+   - Identified top product categories by price and order volume.
+   - Analyzed payment methods and installment patterns.
+   - Examined sales trends over time, revealing seasonal patterns.
+
+Key analytical techniques:
+- Utilized complex SQL queries involving joins, Common Table Expressions (CTEs), and subqueries.
+- Employed aggregate functions (AVG, MAX, MIN) for statistical analysis.
+- Used window functions for ranking and time-based analysis.
+
+### Key Findings
+
+- Geographic concentration: Both customers and sellers heavily concentrated in São Paulo.
+- Delivery impact: Timely delivery significantly influences customer satisfaction and ratings.
+- Product insights: Identified both high-value and frequently ordered product categories.
+- Payment trends: Analyzed preferred payment methods and installment patterns.
+
+This analysis provides valuable insights for Olist to optimize operations, improve customer satisfaction, and drive business growth. The findings can inform strategies in areas such as logistics, product offering, and customer service.
 
 
 ## **Acknowledgements**
